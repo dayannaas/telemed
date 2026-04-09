@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mensajes</title>
+<link rel="stylesheet" href="mensajes.css">
+</head>
+
+<body onload="cargarMensajes()">
+
+<!-- HEADER -->
+<div class="header">
+    <button id="btnVolver" onclick="window.location='dashboard.html'">← Volver</button>
+    <h2>Mensajes</h2>
+</div>
+
+<!-- CHAT -->
+<div class="chat-container">
+
+    <div class="chat">
+
+        <div class="chat-header">
+            Dr. Juan Pérez - Medicina General
+        </div>
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="chat-input">
+            <input id="mensajeInput" placeholder="Escribe tu mensaje...">
+            <button onclick="enviarMensaje()">➤</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
